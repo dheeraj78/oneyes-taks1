@@ -1,0 +1,81 @@
+
+.container {
+    margin-top: 30px;
+    display: flex;
+}
+
+.sidebar {
+    width: 230px;
+    height: 85vh;
+    border: 1px solid black;
+    margin-right: 100px;
+    box-shadow: 0 0 5px 0.2px rgb(234, 234, 234);
+}
+
+.sidebar h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.sidebar ul {
+    width: 100%;
+}
+
+.sidebar ul li:nth-child(1){
+    border-top: 1px solid black;
+}
+
+.sidebar ul li {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    cursor: pointer;
+    transition: all 2ms ease;
+}
+
+.sidebar ul li:hover {
+    background-color: rgb(182, 211, 136);
+}
+
+.btn-group {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.complete {
+    background-color: rgb(100, 67, 216);
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    width: max-content;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: all 6ms ease-in-out;
+    
+}
+
+.complete:hover {
+    cursor: pointer;
+    background-color: #586de4;
+}
+
+.btns {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.percentage {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}

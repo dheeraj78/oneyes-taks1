@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- css files link -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="timer">
+            <p id="time">
+                10
+            </p>
+        </div>
+        <div class="container1">
+            <p class="qno" id="qno" >Question 1 of 5</p>
+
+            <div class="cover-result none" id="cover-result">
+                    <div class="result-content">
+                        <p id="result" class="poppins-medium">
+                            Result
+                        </p>
+                        <div class="col-result">
+
+                            <div class="block1 block">
+                                <p class="fromjs1 fromjs" id="fromjs1">
+                                    5
+                                </p>
+                                <p>Correct</p>
+                            </div>
+
+                            <div class="block2 block">
+                                <p class="fromjs2 fromjs" id="fromjs2">
+                                    5
+                                </p>
+                                <p>Wrong</p>
+                            </div>
+
+                            <div class="block3 block">
+                                <p class="fromjs3 fromjs" id="fromjs3">
+                                    5
+                                </p>
+                                <p>Percentage</p>
+                            </div>
+
+                        </div>
+                        <div class="btn"><button class="home" onclick="homepage()">Home</button></div>
+                    </div>
+            </div>
+
+            <div class="sub-container1" id="quiz">
+                
+                <div class="question-slider">
+                    <p class="question">What is Python?</p>
+                    <div class="options">
+                        <ul>
+                            <li> <input type="radio" name="q1" id="" value="a"> A type of snake</li>
+                            <li> <input type="radio" name="q1" id="" value="b"> A high-level programming languagee</li>
+                            <li> <input type="radio" name="q1" id="" value="c"> A database management system</li>
+                            <li> <input type="radio" name="q1" id="" value="d"> A web browser</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-slider">
+                    <p class="question">How do you write a comment in Python?</p>
+                    <div class="options">
+                        <ul>
+                            <li> <input type="radio" name="q2" id="" value="a"> /* This is a comment */ </li>
+                            <li> <input type="radio" name="q2" id="" value="b"> &lt;-- This is a comment --&gt; </li>
+                            <li> <input type="radio" name="q2" id="" value="c"> // This is a comment</li>
+                            <li> <input type="radio" name="q2" id="" value="d"> # This is a comment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-slider">
+                    <p class="question">What is the difference between a list and a tuple in Python?</p>
+                    <div class="options">
+                        <ul>
+                            <li> <input type="radio" name="q3" id="" value="a"> A list is mutable, while a tuple is immutable</li>
+                            <li> <input type="radio" name="q3" id="" value="b"> A list is immutable, while a tuple is mutable</li>
+                            <li> <input type="radio" name="q3" id="" value="c"> A list can store only integers, while a tuple can store any data type</li>
+                            <li> <input type="radio" name="q3" id="" value="d"> A list is a set of key-value pairs, while a tuple is an ordered collection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-slider">
+                    <p class="question">How do you create a variable in Python?</p>
+                    <div class="options">
+                        <ul>
+                            <li> <input type="radio" name="q4" id="" value="a"> var x = 10</li>
+                            <li> <input type="radio" name="q4" id="" value="b"> int x = 10</li>
+                            <li> <input type="radio" name="q4" id="" value="c"> x = 10</li>
+                            <li> <input type="radio" name="q4" id="" value="d"> declare x = 10</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="question-slider">
+                    <p class="question">What is a dictionary in Python?</p>
+                    <div class="options">
+                        <ul>
+                            <li> <input type="radio" name="q5" id="" value="a"> A list of words and their meanings</li>
+                            <li> <input type="radio" name="q5" id="" value="b"> A collection of key-value pairs</li>
+                            <li> <input type="radio" name="q5" id="" value="c"> A module for data analysis</li>
+                            <li> <input type="radio" name="q5" id="" value="d"> A type of loop</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-group">
+                <button class="next" id="changeQuestion" onclick="questionChange()">Next</button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
